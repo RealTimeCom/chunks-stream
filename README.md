@@ -1,6 +1,6 @@
 ## Chunks Stream
 
-**Transform stream into http chunks**
+**Transform data stream into http chunks**
 
 ```sh
 $ npm install chunks-stream
