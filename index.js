@@ -17,7 +17,6 @@ class chunks extends Transform {
     }
 }
 chunks.prototype._transform = function(chunk, enc, cb) {
-    //console.log('transf',chunk.toString());
     this.c = Buffer.concat([this.c, chunk]); /*append chunk to cache*/
     let l = this.c.length;
     if (l > this.b) {
@@ -32,7 +31,6 @@ chunks.prototype._transform = function(chunk, enc, cb) {
     cb();
 };
 chunks.prototype._flush = function(cb) {
-    //console.log('flush',this.c.toString());
     /*send remaining cache + end bytes*/
     let l = this.c.length;
     if (l > 0) {
