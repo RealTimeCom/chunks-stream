@@ -1,0 +1,28 @@
+{
+  "name": "chunks-stream",
+  "version": "0.0.1",
+  "description": "Transform stream into chunks",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RealTimeCom/chunks-stream.git"
+  },
+  "keywords": [
+    "stream",
+    "chunk",
+    "chunked",
+    "chunks",
+    "range",
+    "read",
+    "transform"
+  ],
+  "author": "Tanase Laurentiu Iulian <expertphp@gmail.com> (https://github.com/RealTimeCom)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RealTimeCom/chunks-stream/issues"
+  },
+  "homepage": "https://github.com/RealTimeCom/chunks-stream"
+}
