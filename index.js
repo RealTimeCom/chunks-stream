@@ -1,4 +1,4 @@
-
+/* SOURCE FILE - Copyright (c) 2017 chunks-stream - Tanase Laurentiu Iulian - https://github.com/RealTimeCom/chunks-stream */
 'use strict';
 
 const Transform = require('stream').Transform;
@@ -12,8 +12,8 @@ class chunks extends Transform {
         this.g = Buffer.from(b.toString(16)); /*convert chunk size into hex number*/
         this.z = Buffer.allocUnsafeSlow(0); /*create an un-pooled empty buffer*/
         this.c = this.z; /*init empty cache buffer*/
-        this.n = Buffer.from('\r\n');/*new line*/
-        this.e = Buffer.from('0\r\n\r\n');/*end bytes*/
+        this.n = Buffer.from('\r\n'); /*new line*/
+        this.e = Buffer.from('0\r\n\r\n'); /*end bytes*/
     }
 }
 chunks.prototype._transform = function(chunk, enc, cb) {

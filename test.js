@@ -18,6 +18,8 @@ read.prototype._read = function(size) {
         //console.log('read', this.r.slice(this.p, this.p + this.s).toString());
         this.push(this.r.slice(this.p, this.p + this.s));
         this.p += this.s;
+    }else{
+      this.push(null);
     }
 };
 
