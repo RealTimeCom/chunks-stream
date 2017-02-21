@@ -8,7 +8,7 @@ $ npm install chunks-stream
 #### Example
 Send 10 bytes of http chunks
 ```js
-const bytes = require('chunks-stream'),fs=require('fs');
+const chunks = require('chunks-stream'), fs = require('fs');
 
 fs.createReadStream('/dir/file.txt').// readable stream
 pipe(new chunks(10)).// 10 bytes each chunk
