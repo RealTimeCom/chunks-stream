@@ -1,7 +1,7 @@
 {
   "name": "chunks-stream",
-  "version": "1.0.1",
-  "description": "Transform stream into chunks",
+  "version": "1.0.2",
+  "description": "Chunks Stream - split stream data into HTTP chunks",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
@@ -16,7 +16,7 @@
     "chunked",
     "chunks",
     "range",
-    "read",
+    "http",
     "transform"
   ],
   "author": "Tanase Laurentiu Iulian <expertphp@gmail.com> (https://github.com/RealTimeCom)",
