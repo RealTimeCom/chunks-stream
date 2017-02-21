@@ -1,6 +1,6 @@
 {
   "name": "chunks-stream",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Chunks Stream - split stream data into HTTP chunks",
   "main": "index.js",
   "scripts": {

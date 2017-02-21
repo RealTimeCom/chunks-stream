@@ -5,9 +5,8 @@ const Transform = require('stream').Transform;
 
 class chunks extends Transform {
     constructor(b) {
-        super({
-            highWaterMark: b
-        });
+        b = parseInt(b);
+        super({ highWaterMark: b + 2 }); // b + new line
         this.b = b;
         this.g = Buffer.from(b.toString(16)); // convert chunk size into hex number
         this.z = Buffer.allocUnsafeSlow(0); // create an un-pooled empty buffer
